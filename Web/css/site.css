@@ -1,0 +1,96 @@
+html, body {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-weight: 300;
+  line-height: 1.5;
+}
+body {
+    background-color: #cccccc;
+	font-family: Helvetica, Arial, sans-serif;
+}
+a{
+  text-decoration: none;
+}
+#logo{
+  height: 100px;
+  width: 150px;
+  margin: 0 auto;
+}
+#banner ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+#banner li {
+    float: left;
+}
+
+#banner li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+#banner li a:hover {
+    background-color: #111;
+}
+
+.new-products{
+  
+	height: 200px;
+	width: 200px;
+  margin: 0;
+  overflow: auto;
+}
+.new-products img{
+	border: 3px solid black;
+	height: 100px;
+	width 100px;
+	padding: 10px;
+}
+
+
+
+.inquiry-box{
+  padding: 2px;
+  background-color: yellow;
+  border: 2px solid black;
+}
+
+/* FOOTER NAVIGATION */
+.about{
+    border: 2px solid black;
+    background: pink;
+    width: 500px;
+	display: inline;
+}
+
+}
+.about li{
+  display: block;
+
+}
+.about ul{
+  display: block;
+}
+
+.about #social {
+  float: right;
+  
+}
+#social li a{
+  color: white;
+  text-align: top;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+#social ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
