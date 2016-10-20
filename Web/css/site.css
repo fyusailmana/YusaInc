@@ -1,6 +1,7 @@
 .container{
   width: 960px;
   margin: 0px auto;
+  
 }
 html, body {
   min-height: 100%;
@@ -47,17 +48,15 @@ a{
     background-color: #111;
 }
 
-.main .new-products{
-
+.new-products{
+  text-align: center;
 	height: 360px;
 	width: 960px;
-  margin: 0 auto;
-
 }
 .new-products img{
-	border: 3px solid black;
+	border: 1px solid black;
 	height: 240px;
-	width: 960px;
+  border
 	padding: 10px;
   margin: 0px auto;
 }
@@ -68,6 +67,7 @@ a{
   background-color: yellow;
   border: 2px solid black;
   float: none;
+  border-radius: 25px;
 }
 
 /* FOOTER NAVIGATION */
@@ -75,6 +75,7 @@ a{
     border: 2px solid black;
     background: pink;
     display: block;
+    border-radius: 25px;
 }
 .footer #about{
   width: 620px;
@@ -91,7 +92,7 @@ a{
 }
 #about li a{
   color: white;
-  
+
   padding: 14px 16px;
   text-decoration: none;
 
