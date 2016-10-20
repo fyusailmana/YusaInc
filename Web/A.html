@@ -5,22 +5,24 @@
 	<meta name="author" content="Yusa Inc.">
 	<title>Website</title>
 	<link rel="stylesheet" type="text/css" href="css/site.css">
+
 </head>
 	<body>
+
 		<div class="container">
 		<header id="banner">
-	<a href="#"><img id="logo" src="images\logo.PNG" ></a>
+	<a href="A.html"><img id="logo" src="images\logo.PNG" ></a>
 
 		<ul>
 			<li><a href="#">My account</a></li>
-			<li><a href="#">Register</a></li>
+			<li><a href="Register.html">Register</a></li>
 			<li><a href="#">Products</a></li>
-			<li style="float:right; background-color: grey"><a href="#">contact us</a></li>
+			<li style="float:right; background-color: grey; border-right: inherit;"><a href="#">contact us</a></li>
 		</ul>
 		</header>
-	<div class="main">
+
 		<div class="new-products">
-	<h1>New Products</h1>
+	<h1 >New Products</h1>
 
 
 		<div id="new-products-images" class="new-products">
@@ -37,49 +39,32 @@
 <a class="w3-btn-floating" style="position:absolute;top:45%;right:0" onclick="plusDivs(1)">❯</a>
 
 </div>
+<script src="Script/myScript.js">
 
-<script>
-var slideIndex = 1;
-showDivs(slideIndex);
-
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
-
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";
-  }
-  x[slideIndex-1].style.display = "block";
-}
 </script>
+
 		</div>
 		</div>
 		<div class="inquiry-box">
 			<p>Inquiries</p>
 
 		<form action="demo_form.asp" method="get">
-			<textarea rows="4" cols="35"name="inquiry" id="inquiry">say it dud!</textarea required>
-			<p>Name: <input type="text" name"username"> <input type="submit" value="Submit"></p>
-			<p>To submit your Inquiries about our product</p>
+			<textarea rows="4" cols="35"name="inquiry" id="inquiry" placeholder="Please say something. . ."></textarea required>
+			<p>Name: <input type="text" name"username" placeholder="Your Name. . . "> <input type="submit" value="Submit"></p>
+			<p>To submit your inquiries about our product</p>
 		</div>
-	</div>
 	</form>
 	<div  class="footer">
-<div id="about">
+<div class="about">
 	<ul>
 		<li><a href="#">About</a></li>
 		<li><a href="#">Contact</a></li>
 		<li><a href="#">Directions</a></li>
 	</ul>
-	</div>
+
 	<div id="social">
 
-    
+    <h2>social</h2>
     <ul>
       <li><a href="#" rel="me">delicious</a></li>
       <li><a href="#" rel="me">digg</a></li>
@@ -91,6 +76,7 @@ function showDivs(n) {
       <li><a href="#" rel="me">twitter</a></li>
     </ul>
 
+</div>
 </div>
 </div>
 </div>
