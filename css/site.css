@@ -1,0 +1,110 @@
+.container{
+  width: 960px;
+  margin: 0px auto;
+  
+}
+html, body {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-weight: 300;
+  line-height: 1.5;
+}
+body {
+    background-color: #cccccc;
+	font-family: Helvetica, Arial, sans-serif;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-family:Georgia, serif;
+}
+a{
+  text-decoration: none;
+}
+#logo{
+  height: 100px;
+  width: 150px;
+  margin: 0 auto;
+}
+#banner ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+#banner li {
+    float: left;
+    border-right: 1px solid white;
+}
+
+#banner li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+#banner li a:hover {
+    background-color: #111;
+}
+
+.new-products{
+  text-align: center;
+	height: 360px;
+	width: 960px;
+}
+.new-products img{
+	border: 1px solid black;
+	height: 240px;
+  border
+	padding: 10px;
+  margin: 0px auto;
+}
+
+
+.inquiry-box{
+  padding: 2px;
+  background-color: yellow;
+  border: 2px solid black;
+  float: none;
+  border-radius: 25px;
+}
+
+/* FOOTER NAVIGATION */
+.footer{
+    border: 2px solid black;
+    background: pink;
+    display: block;
+    border-radius: 25px;
+}
+.footer #about{
+  width: 620px;
+  float: none;
+  margin: 0;
+}
+.footer #social{
+  width: 300px;
+  margin: 0 auto;
+  float: right;
+}
+#about ul{
+  list-style-type: none;
+}
+#about li a{
+  color: white;
+
+  padding: 14px 16px;
+  text-decoration: none;
+
+}
+#social li a{
+  color: white;
+
+  padding: 14px 16px;
+  text-decoration: none;
+}
+#social ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
