@@ -5,7 +5,7 @@
 	<meta name="author" content="Yusa Inc.">
 	<title>Website</title>
 	<link rel="stylesheet" type="text/css" href="css/site.css">
-  
+
 
 </head>
 	<body>
@@ -21,8 +21,7 @@
 	<div id="mySidenav" class="sidenav">
 	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 	  <a onclick="document.getElementById('id01').style.display='block'" href="#">My account</a>
-	  <a href="Register.html">Register</a>
-	  <a href="#">Products</a>
+	  <a href="products.html">Products</a>
 	  <a href="#">Contact</a>
 	</div>
 
@@ -32,10 +31,9 @@
       <div class="imgcontainer">
         <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
 
-        <ul class="tab">
+        <ul style="color: #777;background-color:black;text-align: center;" class="tab">
           <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'login')">Login</a></li>
           <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'signup')">Sign Up</a></li>
-
         </ul>
       </div>
 
@@ -51,13 +49,11 @@
           <input type="checkbox" checked="checked"> Remember me
         </div>
 
-        <div class="container" style="background-color:#f1f1f1">
+        <div class="buttonContainer" style="background-color:#f1f1f1">
           <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
           <span class="psw">Forgot <a href="#">password?</a></span>
         </div>
-
-
-    </div>
+    	</div>
 
     <div id="signup" class="tabcontent">
 
@@ -80,11 +76,11 @@
       <button type="submit">Sign up</button>
     </div>
 
-    <div class="container" style="background-color:#f1f1f1">
+    <div class="buttonContainer" style="background-color:#f1f1f1">
       <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
     </div>
-    </form>
-        </div>
+  </form>
+</div>
 
 </div>
 
@@ -95,28 +91,22 @@
 		</header>
 
 		<div class="new-products">
-	<h1 >New Products</h1>
+				<h1>New Products</h1>
+				<div id="new-products-images" class="new-products">
+					<div class="w3-content" style="max-width:950px;position:relative">
 
+						<img class="mySlides" src="images\logo.PNG" style="width:100%">
+						<img class="mySlides" src="images\a.jpg" style="width:100%">
+						<img class="mySlides" src="images\aa.jpg" style="width:100%">
+						<img class="mySlides" src="images\aaa.jpg" style="width:100%">
 
-		<div id="new-products-images" class="new-products">
-
-
-<div class="w3-content" style="max-width:800px;position:relative">
-
-<img class="mySlides" src="images\logo.PNG" style="width:100%">
-<img class="mySlides" src="images\a.jpg" style="width:100%">
-<img class="mySlides" src="images\aa.jpg" style="width:100%">
-<img class="mySlides" src="images\aaa.jpg" style="width:100%">
-
-<a class="w3-btn-floating" style="position:absolute;top:45%;left:0" onclick="plusDivs(-1)">❮</a>
-<a class="w3-btn-floating" style="position:absolute;top:45%;right:0" onclick="plusDivs(1)">❯</a>
-
-</div>
+						<a class="btnfloating" style="position:absolute;top:45%;left:0" onclick="plusDivs(-1)">❮</a>
+						<a class="btnfloating" style="position:absolute;top:45%;right:0" onclick="plusDivs(1)">❯</a>
+					</div>
 <script src="Script/myScript.js">
 
 </script>
-
-		</div>
+			</div>
 		</div>
 		<div class="inquiry-box">
 			<p>Inquiries</p>
@@ -128,29 +118,13 @@
 		</div>
 	</form>
 	<div  class="footer">
-<div class="about">
-	<ul>
-		<li><a href="#">About</a></li>
-		<li><a href="#">Contact</a></li>
-		<li><a href="#">Directions</a></li>
-	</ul>
-
-	<div id="social">
-
-    <h2>social</h2>
-    <ul>
-      <li><a href="#" rel="me">delicious</a></li>
-      <li><a href="#" rel="me">digg</a></li>
-
-      <li><a href="#" rel="me">facebook</a></li>
-      <li><a href="#" rel="me">last.fm</a></li>
-      <li><a href="#" rel="alternate">rss</a></li>
-
-      <li><a href="#" rel="me">twitter</a></li>
-    </ul>
-
-</div>
-</div>
+			<div class="about">
+				<ul>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Contact</a></li>
+					<li><a href="#">Directions</a></li>
+				</ul>
+			</div>
 </div>
 </div>
 	</body>

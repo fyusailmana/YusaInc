@@ -11,8 +11,8 @@ html, body {
   line-height: 1.5;
 }
 body {
-    background-color: #cccccc;
-	font-family: Helvetica, Arial, sans-serif;
+    background-color: #f2f2f2;
+	   font-family: Helvetica, Arial, sans-serif;
 }
 h1,h2,h3,h4,h5,h6 {
     font-family:Georgia, serif;
@@ -29,12 +29,12 @@ a{
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
-    background-color: #333;
+    overflow: auto;
+    background-color: green;
+    width: 100%;
 }
 #banner li {
-    float: left;
-    color:pink;
+    color:white;
 }
 
 #banner li a{
@@ -50,21 +50,23 @@ a{
 
 .new-products{
   text-align: center;
-	height: 360px;
-	width: 960px;
+  margin: auto;
 }
 .new-products img{
-	border: 1px solid black;
-	height: 240px;
-  border
+	height: 360px;
 	padding: 10px;
   margin: 0px auto;
-}
+  text-align: center;
+  clear: both;
 
+}
+.btnfloating{
+  cursor: pointer;
+}
 
 .inquiry-box{
   padding: 2px;
-  background-color: yellow;
+  background-color: gray;
   border: 2px solid black;
   float: none;
   border-radius: 25px;
@@ -72,27 +74,19 @@ a{
 
 /* FOOTER NAVIGATION */
 .footer{
-    border: 2px solid black;
-    background: pink;
+    background: black;
     display: block;
-    border-radius: 25px;
 }
 .footer #about{
   width: 620px;
   float: none;
   margin: 0;
 }
-.footer #social{
-  width: 300px;
-  margin: 0 auto;
-  float: right;
-}
-#about ul{
+.footer ul{
   list-style-type: none;
 }
-#about li a{
+.footer li a{
   color: white;
-
   padding: 14px 16px;
   text-decoration: none;
 
@@ -154,7 +148,7 @@ a{
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: yellow;
+    color: white;
     display: block;
     transition: 0.3s
 }
@@ -173,10 +167,10 @@ a{
 
 /* Full-width input fields */
 input[type=text], input[type=password], input[type=email], input[type=number] {
-    width: 100%;
+    width: 50%;
     padding: 12px 20px;
     margin: 8px 0;
-    display: inline-block;
+    display: block;
     border: 1px solid #ccc;
     box-sizing: border-box;
 }
@@ -189,14 +183,15 @@ button {
     margin: 8px 0;
     border: none;
     cursor: pointer;
-    width: 100%;
+    width: 20%;
+    display: block;
 }
 
 /* Extra styles for the cancel button */
 .cancelbtn {
     width: auto;
     padding: 10px 18px;
-    background-color: #f44336;
+    background-color: green;
 }
 
 /* Center the image and position the close button */
@@ -206,13 +201,8 @@ button {
     position: relative;
 }
 
-img.avatar {
-    width: 40%;
-    border-radius: 50%;
-}
-
-.container {
-    padding: 16px;
+.buttonContainer {
+    padding: 8px;
 }
 
 span.psw {
@@ -242,25 +232,15 @@ span.psw {
     border: 1px solid #888;
     width: 80%; /* Could be more or less, depending on screen size */
 }
-.tab ul{
-  background-color: yellow;
-}
-ul.tab {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    border: 1px solid #ccc;
-    background-color: #f1f1f1;
-}
 
 /* Float the list items side by side */
-ul.tab li {float: left;}
+ul.tab li {float: none;
+background-color: yellow}
 
 /* Style the links inside the list items */
 ul.tab li a {
-    display: inline-block;
-    color: black;
+    display: inline;
+    color: blue;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -286,16 +266,12 @@ ul.tab li a:focus, .active {
     border-top: none;
 }
 
-
-
-
-
 /* The Close Button (x) */
 .close {
     position: absolute;
     right: 25px;
     top: 0;
-    color: #000;
+    color: white;
     font-size: 35px;
     font-weight: bold;
 }
@@ -322,7 +298,6 @@ ul.tab li a:focus, .active {
     to {transform: scale(1)}
 }
 
-/* Change styles for span and cancel button on extra small screens */
 @media screen and (max-width: 300px) {
     span.psw {
        display: block;
