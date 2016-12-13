@@ -1,0 +1,109 @@
+
+
+
+
+for creating  an inquiry table 
+********************************
+CREATE  TABLE IF NOT EXISTS `mydb`.`INQUIRY` 
+(
+`Cust_inquiry` varchar(1000))
+
+ENGINE = InnoDB;
+
+
+
+for creating product table 
+*******************************
+
+CREATE  TABLE IF NOT EXISTS `mydb`.`PRODUCT` (
+ `Product_ID` INT NOT NULL ,
+ `Name_product` VARCHAR(45) NOT NULL ,
+ `Description` TEXT NULL ,
+ `Price` INT not Null,
+ `quantity` int not null,
+ PRIMARY KEY (`Product_ID`) )
+ENGINE = InnoDB;
+
+
+
+
+
+for creating customer table
+***************************
+CREATE  TABLE IF NOT EXISTS `mydb`.`Customer` 
+(
+ Cust_ID INT NOT NULL auto_increment,
+  
+First_Name TEXT NOT NULL ,
+ 
+Last_Name TEXT NOT NULL ,
+ 
+Email TEXT NOT NULL ,
+  
+Phone_Number VARCHAR(45) NULL ,
+ 
+PRIMARY KEY (`Cust_ID`) )
+ENGINE = InnoDB;
+
+
+
+
+for finding sum of  invoice
+******************
+select sum(Product_quantity*price )from order_product,product
+
+where
+
+
+product.Product_ID=order_product.Product_ID
+
+and
+
+order_id = '1'
+
+
+
+
+for creating a table for order_product
+******************
+create table Order_Product
+
+(
+
+Product_ID int not null,
+
+Order_id int not null,
+
+Product_quantity int,
+
+Primary key (Order_id,Product_ID) 
+
+)
+
+
+
+for creating a table with orderid and customer id 
+******************
+create table order_cust
+
+(
+
+Cust_ID int not null,
+
+Order_id int not null,
+
+Primary key (Order_id) 
+
+)
+
+
+for creating a table that stores customers password in a hashed format
+*******************
+create table admin_password
+
+(
+
+cust_ID  int not null,
+
+pass_word char(96) not null
+)
