@@ -7,7 +7,7 @@ Ashwinder
 
 Project
 
-            Build an interactive Selling and buying Website. Where people can have a place to sell their own product and a place to look for something to buy.
+            Build an interactive Selling and buying Website. Where people can Buy Costum made phone cases.
 
 Things to learn
 
